@@ -1,0 +1,22 @@
+/* selector {
+    property-Name : "value"
+} */
+
+#myTable{
+    border-width: 2px;
+    border-style: dashed;
+    border-color: coral;
+border-spacing: 20px;
+    width: 100%;
+   
+    /* border: 2px solid red; */
+}
+
+td{
+    padding: 20px;
+}
+
+th{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

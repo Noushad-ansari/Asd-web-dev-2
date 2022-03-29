@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+.parent{
+    background-color: lightgray;
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* align-content:flex-end; */
+    /* align-items: center; */
+    /* flex-direction: column-reverse; */
+}
+
+
+#child1{
+    flex-grow: 2;
+    /* order: 4; */
+}
+#child2{
+    /* order: 3; */
+    flex-grow: 3;
+    align-self: center;
+}
+
+#child3{
+
+    /* order: 2; */
+    /* flex-grow: 5; */
+    flex-shrink: 2;
+    align-self: flex-end;
+}
+#child4{
+    /* order: 1; */
+    flex-grow: 3;
+}
+
+
+
+.child{
+    height: 100px; 
+    width: 100px;
+    margin: 10px;
+}
+
+.child:nth-child(even){
+    background-color: lightcoral;
+}
+.child:nth-child(odd){
+    background-color: lightseagreen;
+}
+
+
+/* dineshsingh2448@gmail.com
+sudarshansingh2448@gmail.com
+kamalcute1234@gmail.com
+Jakharjaspreet@gamil */

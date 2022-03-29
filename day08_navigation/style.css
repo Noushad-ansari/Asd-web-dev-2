@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background-color: rgba(8, 2, 37, 0.897);
+
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 5px;
+
+    font-family: 'Bigelow Rules', cursive;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.logo{
+    font-size: 20px;
+}
+.menu{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+span{
+    margin-top: 5px;
+}
+
+.contact_btn{
+    margin-top: 5px;
+}
+
+.btn{
+    background-color: rgb(39, 140, 180);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+    /* background-color: red; */
+}
+
+.menu{
+    /* background-color: lightblue; */
+   
+}
+
+.contact_btn{
+    /* background-color: lightcoral; */
+}

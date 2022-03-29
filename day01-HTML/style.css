@@ -1,0 +1,23 @@
+selector {
+    propert-name : value;
+}
+
+#sectionOne{
+    background-color: lightblue;
+    height: 600px;
+  
+}
+#sectionTwo{
+    background-color: lightcoral;
+    height: 600px;
+}
+#sectionThree{
+    background-color: lightgreen;
+    height: 600px;
+    
+}
+
+button{
+    background-color: darkgoldenrod;
+    padding: 10px 20px;
+}

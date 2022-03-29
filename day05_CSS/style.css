@@ -1,0 +1,45 @@
+/* selector{
+    propertyName : "value";
+} */
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent{
+    background-color: lightgray;
+    width:250px;
+    padding: 20px;
+    margin: 10px;
+    /* border-width: 5px;
+    border-style: double;
+    border-color: rgb(205, 80, 209); */
+    /* border: 5px dotted lightcoral; */
+    border-top: 5px groove gray;
+    border-bottom: 5px groove gray;
+    border-radius: 20px;
+  
+}
+.para{
+    /* background-color: antiquewhite; */
+    color: rgb(10, 1, 1);
+    
+        
+}
+/* .flower{
+    height: 200px;
+    width: 250px;
+    border-radius: 50%;
+} */
+.flowerSection {
+    height: 200px;
+    width: 200px;
+background-image: url("https://images.pexels.com/photos/1697912/pexels-photo-1697912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 50%;
+border: 5px groove darkgoldenrod;
+box-shadow: 2px 3px 2px black ;
+}

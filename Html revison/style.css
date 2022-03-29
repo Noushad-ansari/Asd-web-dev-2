@@ -1,0 +1,54 @@
+
+  /* selector {
+            propertyName : properValue;
+        } */
+
+
+body{
+    background-color: rgb(238, 232, 225);
+}
+
+h1{
+    color: orange;
+    text-align: center;
+}
+
+#sectionOne{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: lightblue;
+    height: 100vh;
+    background-image: url('./cat.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sectionTwo{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(174, 224, 163);
+    height: 100vh;
+}
+#sectionThree{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(157, 157, 180);
+    height: 100vh;
+}
+#sectionFour{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(161, 154, 133);
+    height: 100vh;
+}
+
+.top{
+    background-color: orange;
+    color: wheat;
+    padding: 10px 30px;
+    border-radius: 10px;
+    outline: non;
+}
+
+h2{
+    text-align: center;
+}

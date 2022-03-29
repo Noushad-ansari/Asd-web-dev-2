@@ -1,0 +1,35 @@
+/* selector {
+    property-Name : "value"
+} */
+
+/* #iframe{
+    border:none;
+} */
+.para{
+    background-color: orange;
+}
+
+.paraTwo{
+    background-color: teal;
+}
+
+.paraThree{
+    background-color: grey;
+}
+.fontSize{
+    font-size: 20px;
+    padding: 20px 10px;
+}
+
+#men{
+    background-color: rgb(121, 81, 30);
+    padding: 20px;
+}
+#women{
+    background-color: rgb(33, 43, 187);
+    padding: 30px;
+}
+#transgender{
+    background-color: rgb(37, 160, 47);
+    padding: 10px;
+}
