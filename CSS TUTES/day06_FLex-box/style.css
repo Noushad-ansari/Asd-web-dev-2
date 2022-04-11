@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: lightblue;
+    height: 80vh;
+    width:80vw;
+    /* display: flex; */
+    
+    /* flex-direction: column-reverse; */
+}
+.row{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.item{
+    border: 2px solid red;
+    width: 300px;
+    height:200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 50px;
+    
+}

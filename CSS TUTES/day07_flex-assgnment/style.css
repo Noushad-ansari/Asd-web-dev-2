@@ -1,0 +1,139 @@
+.container {
+    width: 100%;
+    border: 1px solid coral;
+    height: 100vh;
+}
+
+.row {
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid green;
+}
+
+.header {
+    background-color: orange;
+    text-align: center;
+}
+
+.nav {
+    height: 25px;
+    background-color: teal;
+    text-align: center;
+}
+
+.main-section {
+    display: flex;
+}
+
+.col {
+    border: 2px solid blueviolet;
+}
+
+.col-1,
+.col-3 {
+    width: 30%;
+    /* background-color: rgb(170, 117, 117); */
+}
+
+.col-2 {
+    width: 60%;
+}
+
+.footer {
+
+    background-color: teal;
+}
+
+.subicon {
+    height: 100px;
+    margin-bottom: 5px;
+    border: 2px solid lightskyblue;
+}
+
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search {
+    background: skyblue;
+}
+
+.social {
+    background: rgb(52, 106, 128);
+}
+
+.news {
+    background: rgb(60, 160, 199);
+}
+
+/* main section */
+
+
+.banner {
+    background-color: orangered;
+    height: 50px;
+}
+
+.copi {
+    background-color: rgb(190, 136, 117);
+    height: 40px;
+}
+
+.product {
+    background-color: pink;
+    height: 70px;
+}
+
+.blog {
+    background-color: rgb(218, 65, 90);
+    height: 100px;
+}
+
+.col-parent {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid green;
+    height: 220px;
+}
+
+.category {
+    border: 1px solid red;
+}
+
+.colorShade {
+    height:40px;
+    width: 100px;
+}
+
+.shade1 {
+    background-color: yellow;
+}
+
+.shade2 {
+    background-color: rgb(226, 226, 26);
+}
+.shade3 {
+    background-color: rgb(170, 170, 20);
+}
+.shade4 {
+    background-color: rgb(230, 230, 18);
+}
+.shade5 {
+    background-color: rgb(224, 224, 36);
+}
+.shade6 {
+    background-color: rgb(216, 216, 9);
+}
+
+.sideNav{
+    background-color: yellow;
+    width: 80px;
+}
+
+.otherOffer{
+    background-color: darkorange;
+    height: 100px;
+}

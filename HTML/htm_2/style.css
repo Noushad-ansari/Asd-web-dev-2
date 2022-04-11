@@ -1,0 +1,25 @@
+header{
+    background-color: teal;
+}
+
+
+
+.headerPara{
+    background-color: lightcoral;
+}
+
+.mainPara{
+    background-color: lightgray;
+}
+
+.footerPara{
+    background-color: lightpink;
+}
+
+#fPara{
+    font-size: 20px;
+}
+
+.paraFont{
+    font-size: 20px;
+}

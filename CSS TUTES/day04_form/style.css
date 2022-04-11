@@ -1,0 +1,27 @@
+.form{
+    background-color: lightblue;
+    
+}
+
+.inputGroup{
+    width: 100%;
+    /* background-color: red; */
+}
+h1{
+    text-align: center;
+}
+label{
+    font-size: larger;
+    color: gray;
+}
+input{
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.inputGroup {
+    display: flex;
+    justify-content: space-around;
+}

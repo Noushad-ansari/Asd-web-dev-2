@@ -1,0 +1,33 @@
+html{
+    font-size: 5px;
+}
+
+
+.parent{
+    background-color: rgb(202, 202, 112);
+    width: 50vw;
+    height: 10vh;
+    /* height: 300px;
+    width: 300px; */
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.child{
+    text-align: center;
+  width: 50%;
+    background-color: lightcoral;
+    font-size: 25px;
+}
+ /* .paraONE{
+     font-size: 4rem;
+ }
+ .paraTwo{
+     font-size: 8rem;
+ }
+ .paraThree{
+     font-size: 2rem;
+ } */

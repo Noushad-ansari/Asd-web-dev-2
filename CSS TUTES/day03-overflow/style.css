@@ -1,0 +1,11 @@
+.link{
+    font-size: 25px;
+    color: teal;
+}
+/* #specialLink{
+    color: gold;
+} */
+
+a[target="_blank"] {
+    color: red;
+}

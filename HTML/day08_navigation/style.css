@@ -7,11 +7,10 @@
 
     display: flex;
     justify-content: space-around;
+    align-items: center;
     color: white;
     padding: 5px;
 
-    font-family: 'Bigelow Rules', cursive;
-    font-family: 'Cedarville Cursive', cursive;
 }
 
 .logo{
@@ -38,7 +37,30 @@ span{
     border-radius: 10px;
 }
 
-
+/* .btn::before{
+    content : "\f805";
+    width : 25px;
+} */
+/* unvisited link */
+a:link {
+    color: rgb(62, 166, 173);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(157, 209, 88);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(154, 195, 219);
+  }
+  
+  /* selected link */
+  a:active {
+    color: orange;
+  }
+  
 
 
 
