@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Monoton&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Monoton', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+  perspective: 400px;
+  
+}
+
+.card {
+ 
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    
+}
+
+
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    color: rgb(233, 12, 49);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 5, 5);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}   
+
+h1{
+    z-index: 10;
+    text-align: center;
+    color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
+}

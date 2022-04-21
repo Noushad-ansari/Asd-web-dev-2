@@ -1,0 +1,45 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container{
+  height: 300px;
+  width: 300px;
+  background-color: lightgray;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  perspective:800px;
+  perspective-origin: right;
+  transform: rotateY(45deg);
+}
+.child{
+  position: absolute;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 50px;
+  width: 300px;
+  background-color: lightcoral;
+  transition: width  3s e;
+  transition-delay: 2s;
+  /* backface-visibility: hidden; */
+  
+}
+.child:hover{
+  /* transform: translateZ(100px);  */
+  /* transform: rotateY(180deg); */
+  transition: scale(1);
+  width: 400px;
+}
+
+.books{
+  color: teal;
+  font-size: 100px;
+}

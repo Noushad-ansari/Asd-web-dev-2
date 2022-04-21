@@ -1,0 +1,43 @@
+
+:root {
+    --primaryBackrground : rgb(236, 169, 22);
+    --secondaryBackground: rgb(30, 235, 235);
+    --primaryTextColor : rgb(101, 36, 161);
+    --secondaryTextColor : rgb(209, 199, 54);
+  }
+
+.container{
+    border : 2px solid rgb(241, 193, 193)
+}
+
+header{
+    --clr : red ;
+    height: 60px;
+   background-color: var(--clr);
+    color: var(--primaryTextColor);
+}
+main{
+    height: 400px;
+    background-color: var(--primaryBackrground);
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+footer{
+    background-color: var(--secondaryBackground);
+    height: 100px;
+    color: var(--primaryTextColor)
+}
+
+article{
+    background-color: rgb(18, 167, 75);
+    width: 200px;
+    color: rgb(241, 24, 133);
+}
+aside{
+    color: rgb(241, 24, 133);
+    background: goldenrod;
+    width: 200px;
+}
