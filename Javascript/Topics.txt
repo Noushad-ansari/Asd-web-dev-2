@@ -1,0 +1,14 @@
+JavaScript Intro
+Hello World Program
+comments in js
+Javascript Valiable -  var, let, and const
+
+2. Data Type in js
+
+3.Operators in Javascript
+Comparison and Logical operator
+
+If Else condition
+switch
+
+For,whiel , do-while loop
