@@ -8,6 +8,7 @@ Javascript Valiable -  var, let, and const
 3.Operators in Javascript
 Comparison and Logical operator
 
+***Conditional statement***
 If Else condition
 switch
 
