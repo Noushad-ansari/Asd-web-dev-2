@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 </head>
-<body >
-    <h2 >DOM</h2>
+
+<body id="body">
+    <h2 id="heading">DOM</h2>
+
+    <button onclick="addElement()">Add Element</button>
+    <button onclick="removeElement()">remove Element</button>
+    <button onclick="replaceElement()">replaceElement </button>
+    <br>
+    <br>
+    <button onclick="changeHeading()">Change heading</button>
+
+    <button onclick="changeTheme()">Change Theme</button>
+
+
+    <button id="btn" onclick="addEvent()">Fire Event</button>
+
+    <p id="para">paragraph </p>
+
+    <img id="catImg" height="100"
+        src="https://static5.depositphotos.com/1000270/486/i/600/depositphotos_4869272-stock-photo-bengal-cat-light-brown-cream.jpg"
+        alt="">
+
+    <button onclick="changeImage()">Change image</button>
+
 
 
     <!-- <ul id="menu">
@@ -17,7 +40,7 @@
     </ul>
      -->
 
-     
+    <!--      
     <button onclick="addElement()">add Element</button>
 
     <ul id="menu">
@@ -25,7 +48,7 @@
         <li>Services</li>
         <li>About</li>
         <li>Contact</li>
-    </ul>
+    </ul> -->
     <!-- <ul id="app">
         <li>JavaScript</li>
     </ul> -->
@@ -46,4 +69,5 @@
 
     <script src="./index.js"></script>
 </body>
+
 </html>
