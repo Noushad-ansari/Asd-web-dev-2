@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="parent">
+            <div class="search_InputBox">
+                <input type="text" id="input_Box" class="input_Box" placeholder="Enter City Name..." autocomplete="off"
+                    onfocus="this.value=''">
+            </div>
+
+            <div class="weather_body">
+                <div class="location_details">
+                    <br>
+                    <div class="city" id="city">Usa,In</div>
+                    <div class="date" id="date">3 jan (Monday), 2022</div>
+                </div>
+
+                <div class="weather_status">
+                    <div class="weather_icon" id="weather_Icon">
+                        <img id="icon" src="./public/weather_icon/3dcloud.png" alt="" height="100" width="100">
+                    </div>
+
+                    <div class="temp" id="temp">34&deg C</div>
+                    <div class="min_max" id="min_max">32&deg; C (min) / 35&deg; C (max) </div>
+                    <div class="weather" id="weather">Clouds</div>
+                </div>
+
+                <div class="footer"> &copy;NRA Tech. All Right Reserved</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
