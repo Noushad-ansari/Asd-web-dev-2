@@ -9,40 +9,152 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
 
     <title>YTube</title>
 </head>
 
 <body>
-    <!-- Navbar -->
+
+
+    <!-- Navbar  -->
     <nav>
-        <div class="nav-wrapper #4db6ac teal lighten-2">
-            <a href="#" class="brand-logo">YTube</a>
+        <div class="nav-wrapper #009688 teal">
+            <a href="#!" id="logo" class="brand-logo">Portal</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right ">
-                <li><a href="sass.html">Login</a></li>
-                <li><a href="#modal1" class="modal-trigger">SignUp</a></li>
-                <li><a href="collapsible.html">Logout</a></li>
+                <li id="loginli"><a href="#modal2" class="modal-trigger">Login</a></li>
+                <li id="signupli"><a href="#modal1" class="modal-trigger">SignUp</a></li>
+                <li id="resetBtn"><a href="#resetModal" class="modal-trigger">Reset Password</a></li>
+                <li id="logoutli"><a onclick="logout()">Logout</a></li>
             </ul>
         </div>
     </nav>
+ <!-- mobile nav hamburger -->
+    <ul class="sidenav #f5f5f5 grey lighten-4" id="mobile-demo">
+        <h5 id="mobileProfileName" class=" teal-text text-darken-1 center-align">Hello</h5>
+        <li id="mobileLoginli"><a href="#modal2" class="modal-trigger">Login</a></li>
+        <li id="mobileSignupli"><a href="#modal1" class="modal-trigger">Sign Up</a></li>
+        <li id="mobileResetBtn"><a href="#resetModal" class="modal-trigger">Reset Password</a></li>
+        <li id="mobileLogoutli"><a onclick="logout()">Logout</a></li>
+    </ul>
 
 
-    <!-- modal1 -->
-    <!-- Modal Structure -->
+
+
+    <!-- Navbar old xxxx-->
+    <!-- <nav>
+        <div class="nav-wrapper #4db6ac teal lighten-2">
+            <a href="#" class="brand-logo">YTube</a>
+            <ul id="nav-mobile" class="right ">
+                <li id="loginli"><a href="#modal2" class="modal-trigger">Login</a></li>
+                <li id="signupli"><a href="#modal1" class="modal-trigger">SignUp</a></li>
+                <li id="resetBtn"><a href="#resetModal" class="modal-trigger">Reset Password</a></li>
+                <li id="logoutli"><a onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+    </nav> -->
+
+
+    <!--Sigup modal1 -->
     <div id="modal1" class="modal">
         <div class="modal-content">
             <h4>SignUp</h4>
             <form autocomplete="off" onsubmit="signup(event)">
                 <input type="email" id="signupEmail" placeholder="email" />
                 <input type="password" id="signupPassword" placeholder="password" />
-                <button class="btn waves-effect #4db6ac teal lighten-2" type="submit">submit</button>
+                <button class="btn waves-effect #00695c teal darken-3" type="submit">submit</button>
             </form>
+            <div>
+
+                <button id="googleBtn" class="btn waves-effect black-text white" onclick="loginWithGoggle()">
+                    <img id="googleIcon"
+                        src="https://user-images.githubusercontent.com/1770056/58111071-c2941c80-7bbe-11e9-8cac-1c3202dffb26.png"
+                        alt="" height="30" width="30"> Sign in with Google
+                </button>
+            </div>
         </div>
 
     </div>
 
+    <!-- Login Modal2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Login</h4>
+            <form autocomplete="off" onsubmit="login(event)">
+                <input type="email" id="loginEmail" placeholder="email" />
+                <input type="password" id="loginPassword" placeholder="password" />
+                <button class="btn waves-effect #00695c teal darken-3" type="submit">submit</button>
+            </form>
+            <button id="googleBtn" class="btn waves-effect black-text white" onclick="loginWithGoggle()">Login With
+                <img id="googleIcon"
+                    src="https://user-images.githubusercontent.com/1770056/58111071-c2941c80-7bbe-11e9-8cac-1c3202dffb26.png"
+                    alt="" height="30" width="30">
+            </button>
+            <span ><a href="#resetModal2" class="modal-trigger  red-text text-accent-4" >Forgot  Password</a></span>
 
+        </div>
 
+    </div>
+
+    <!-- Reset Modal -->
+    <!-- reset Password Modal -->
+    <div id="resetModal" class="modal">
+        <div class="modal-content">
+            <h4>Reset Password</h4>
+            <form autocomplete="off" onsubmit="resetPassword(event)">
+                <input type="password" id="NewPassword" placeholder="Type New Password..." />
+                <button class="btn waves-effect #4db6ac teal darken-4" type="submit">submit</button>
+            </form>
+        </div>
+    </div>
+  
+
+   <!--edit profile Modal -->
+   <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Edit your details</h4>
+      <div class="file-field input-field">
+        <div class="btn #4db6ac teal darken-4">
+          <span>File</span>
+          <input type="file" accept="image/*" onchange="uploadImage(event)" />
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+      <form autocomplete="off" id="editProfile" onsubmit="updateUserProfile(event)">
+        <input type="email" name="profileEmail" placeholder="email" />
+        <input type="text" name="name" placeholder="name" />
+        <input type="text" name="phoneno" placeholder="phoneno" />
+        <input type="text" name="specialty" placeholder="speciality" />
+        <input type="text" name="prorfolioUrl" placeholder="protfolio url" />
+        <input type="text" name="experience" placeholder="experience" />
+
+        <button class="btn waves-effect #4db6ac teal darken-4" type="submit">submit</button>   
+      </form>
+     
+    </div>
+  </div>
+
+    <!-- user Details -->
+    <div class="center">
+        <h1>Your Account Details</h1>
+        <div class="userDetails blue-grey-text" ></div>
+    </div>
+
+  <!-- Reset Modal2 -->
+    <!-- reset Password with email link -->
+    <div id="resetModal2" class="modal">
+        <div class="modal-content">
+            <h4>Reset Password</h4>
+            <form autocomplete="off" onsubmit="sendResetPassLink(event)">
+                <input type="email" id="NewPasswordEmail" placeholder="Type Your Email Id" />
+                <button class="btn waves-effect #4db6ac teal darken-4" type="submit">submit</button>
+            </form>
+        </div>
+    </div>
 
 
     <!-- materialized UI Compiled and minified JavaScript -->
@@ -52,32 +164,44 @@
             var elems = document.querySelectorAll('.modal');
             var instances = M.Modal.init(elems);
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
     </script>
 
 
-<!-- firebase cdn` -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script> -->
+    <!-- firebase cdn` -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
 
-   
+
 
     <script type="module">
-    
-     
-      
+
+
+
         // Your web app's Firebase configuration
         const firebaseConfig = {
-          apiKey: "AIzaSyDlx8aEzwuqPqfGV0gb4NVNrrUF5sex1Rw",
-          authDomain: "ytube-146ad.firebaseapp.com",
-          projectId: "ytube-146ad",
-          storageBucket: "ytube-146ad.appspot.com",
-          messagingSenderId: "998964342076",
-          appId: "1:998964342076:web:7f6c5340fcf4ac57e84239"
+            apiKey: "AIzaSyDlx8aEzwuqPqfGV0gb4NVNrrUF5sex1Rw",
+            authDomain: "ytube-146ad.firebaseapp.com",
+            projectId: "ytube-146ad",
+            storageBucket: "ytube-146ad.appspot.com",
+            messagingSenderId: "998964342076",
+            appId: "1:998964342076:web:7f6c5340fcf4ac57e84239"
         };
-      
-        // Initialize Firebase
-       firebase.initializeApp(firebaseConfig);
-      </script>
 
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script defer src="./auth.js"></script>
+    <script defer src="./firestore-db.js"></script>
+    <script src="https://kit.fontawesome.com/ab0cbbfa0a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </body>
 
 </html>
